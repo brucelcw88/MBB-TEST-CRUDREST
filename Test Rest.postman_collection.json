@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "97a80dd8-7691-48ff-9f0b-ebc114058742",
+		"name": "Test Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14582653"
+	},
+	"item": [
+		{
+			"name": "PersonList",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/person/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddPerson",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/person/add?name=Bruce1&age=24&dob=21-08-1919&contact=012-1231232&address=asdasdadsa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person",
+						"add"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Bruce1"
+						},
+						{
+							"key": "age",
+							"value": "24"
+						},
+						{
+							"key": "dob",
+							"value": "21-08-1919"
+						},
+						{
+							"key": "contact",
+							"value": "012-1231232"
+						},
+						{
+							"key": "address",
+							"value": "asdasdadsa"
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditPerson",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/person/edit?name=Bruce1&age=24&dob=21-08-1919&contact=012-1231232&address=asdasdadsa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person",
+						"edit"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Bruce1"
+						},
+						{
+							"key": "age",
+							"value": "24"
+						},
+						{
+							"key": "dob",
+							"value": "21-08-1919"
+						},
+						{
+							"key": "contact",
+							"value": "012-1231232"
+						},
+						{
+							"key": "address",
+							"value": "asdasdadsa"
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePerson",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/person/delete?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
